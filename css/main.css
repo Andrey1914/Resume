@@ -1,0 +1,140 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  background-color: #e5e5e5;
+}
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .container {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+}
+
+.wrap {
+  background-color: #ffffff;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .wrap {
+    display: flex;
+  }
+}
+
+.right {
+  background-color: #1e2939;
+}
+@media screen and (max-width: 320px) {
+  .right {
+    width: calc(100vw - 30px);
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 479px) {
+  .right {
+    width: calc(100vw - 60px);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .right {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .right {
+    padding-top: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .right {
+    width: 370px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .right__foto {
+    width: 100%;
+  }
+}
+.right__info {
+  padding: 50px 40px;
+}
+.right__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+.right__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.right__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.right__item--marker {
+  display: flex;
+  align-items: center;
+}
+.right__item--marker::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #fb6d3a;
+}
+.right__link {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.right__link--last {
+  text-decoration: underline;
+  margin-bottom: 45px;
+}
+
+.left {
+  padding: 102px 88px;
+}
+.left__title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #000000;
+}/*# sourceMappingURL=main.css.map */
