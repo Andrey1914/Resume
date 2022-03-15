@@ -53,6 +53,7 @@
       content: '';
       width: 3px;
       height: 3px;
+      border-radius: 50%;
       margin-right: 10px;
       background-color: $accent-text-color;
     }
@@ -75,15 +76,146 @@
       margin-bottom: 45px;
     }
   }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-text-color;
+  }
 }
 
 .left {
-  padding: 102px 88px;
-  &__title {
+  @media screen and (max-width: 479px) {
+    padding: 30px 20px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding: 65px 55px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 75px 45px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 102px 88px;
+  }
+  &__pre-title {
     font-weight: 700;
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
 
     color: $primary-title-color;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 24px;
+
+    color: $primary-title-color;
+    @media screen and (max-width: 479px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      font-size: 35px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 45px;
+    }
+  }
+  &__wrap {
+    @media screen and (min-width: 768px) {
+      width: 400px;
+    }
+  }
+  &__sub-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 40px;
+
+    color: $primary-text-color;
+  }
+  &__projects {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 8px;
+
+    color: $primary-title-color;
+  }
+  &__list {
+    margin: 0;
+    padding-left: 16px;
+    margin-bottom: 50px;
+    &--row {
+      display: flex;
+      padding: 0;
+    }
+  }
+  &__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: $primary-title-color;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: $primary-text-color;
+    margin-left: 13px;
+    @media screen and (max-width: 479px) {
+      font-size: 12px;
+      margin-left: 6px;
+    }
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-text-color;
+  }
+  &__education {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 12px;
+
+    color: $primary-title-color;
+  }
+  &__education-sub-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 11px;
+
+    color: $accent-text-color;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 12px;
+
+    color: $primary-title-color;
+  }
+
+  &__start,
+  &__country {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: $subtitle-text-color;
+  }
+  &__country {
+    display: flex;
+    align-items: center;
+  }
+  &__start {
+    margin-right: 10px;
+  }
+  &__country::before {
+    content: '';
+    height: 13px;
+    border: 1px solid $section-bg-color;
+    margin-right: 10px;
   }
 }
