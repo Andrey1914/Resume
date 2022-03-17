@@ -31,11 +31,6 @@
 
     color: $secondary-title-color;
   }
-  &__icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
 
   &__item {
     font-weight: 400;
@@ -43,6 +38,19 @@
     line-height: 24px;
 
     color: $secondary-title-color;
+    &--first {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+
+      color: $secondary-title-color;
+      opacity: 0.5;
+      text-shadow: 0px 4px 4px rgb(0 0 0 / 25%),
+        0px 4px 4px rgb(0 0 0 / 25%);
+    }
+    &--last {
+      margin-bottom: 45px;
+    }
 
     &--marker {
       display: flex;
@@ -95,7 +103,7 @@
   @media screen and (min-width: 1200px) {
     padding: 102px 88px;
   }
-  &__pre-title {
+  &__sub-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -124,13 +132,16 @@
       width: 400px;
     }
   }
-  &__sub-title {
+  &__sub-title-text,
+  &__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 40px;
 
     color: $primary-text-color;
+  }
+  &__sub-title-text {
+    margin-bottom: 40px;
   }
   &__projects {
     font-weight: 700;
@@ -141,9 +152,8 @@
     color: $primary-title-color;
   }
   &__list {
-    margin: 0;
-    padding-left: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+
     &--row {
       display: flex;
       padding: 0;
@@ -155,6 +165,25 @@
     line-height: 24px;
 
     color: $primary-title-color;
+    &--row {
+      @media screen and (max-width: 567px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      display: flex;
+      align-items: center;
+    }
+    &--row:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &--row::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 1px solid $primary-text-color;
+    }
   }
   &__link {
     font-weight: 400;
@@ -162,15 +191,19 @@
     line-height: 24px;
 
     color: $primary-text-color;
-    margin-left: 13px;
+    margin-right: 10px;
     @media screen and (max-width: 479px) {
       font-size: 12px;
-      margin-left: 6px;
     }
   }
+
   &__link:hover,
   &__link:focus {
     color: $accent-text-color;
+  }
+  &__description {
+    margin-right: 10px;
+    background-color: $bg-color;
   }
   &__education {
     font-weight: 700;
