@@ -131,8 +131,10 @@ img {
   opacity: 0.5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.right__link--last {
+.right__link--underlined {
   text-decoration: underline;
+}
+.right__link--last {
   margin-bottom: 45px;
 }
 .right__link:hover, .right__link:focus {
@@ -261,7 +263,7 @@ img {
   margin-right: 10px;
   background-color: #e5e5e5;
 }
-.left__education {
+.left__education, .left__experience {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
@@ -281,6 +283,14 @@ img {
   line-height: 17px;
   margin-bottom: 12px;
   color: #000000;
+}
+.left__text--limited {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .left__text--limited {
+    width: 400px;
+  }
 }
 .left__start, .left__country {
   font-weight: 400;

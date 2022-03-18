@@ -79,8 +79,10 @@
     opacity: 0.5;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
       0px 4px 4px rgba(0, 0, 0, 0.25);
-    &--last {
+    &--underlined {
       text-decoration: underline;
+    }
+    &--last {
       margin-bottom: 45px;
     }
   }
@@ -205,7 +207,8 @@
     margin-right: 10px;
     background-color: $bg-color;
   }
-  &__education {
+  &__education,
+  &__experience {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
@@ -228,6 +231,12 @@
     margin-bottom: 12px;
 
     color: $primary-title-color;
+    &--limited {
+      margin-bottom: 25px;
+      @media screen and (min-width: 768px) {
+        width: 400px;
+      }
+    }
   }
 
   &__start,
