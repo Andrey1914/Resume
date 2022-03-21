@@ -132,6 +132,12 @@
   }
   &__sub-title-text {
     margin-bottom: 40px;
+    &--limited {
+      margin-bottom: 25px;
+      @media screen and (min-width: 768px) {
+        width: 400px;
+      }
+    }
   }
   &__projects {
     font-weight: 700;
@@ -142,11 +148,12 @@
     color: $primary-title-color;
   }
   &__list {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 
     &--row {
       display: flex;
       padding: 0;
+      margin-bottom: 20px;
     }
   }
   &__item {
@@ -192,6 +199,10 @@
   &__description {
     margin-right: 10px;
     background-color: $bg-color;
+    &--different {
+      background-color: transparent;
+      margin-bottom: 25px;
+    }
   }
   &__education,
   &__experience {
@@ -217,12 +228,6 @@
     margin-bottom: 12px;
 
     color: $primary-title-color;
-    &--limited {
-      margin-bottom: 25px;
-      @media screen and (min-width: 768px) {
-        width: 400px;
-      }
-    }
   }
 
   &__start,
