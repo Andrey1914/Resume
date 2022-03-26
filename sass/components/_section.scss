@@ -162,6 +162,10 @@
     line-height: 24px;
 
     color: $primary-title-color;
+    &--last {
+      border-left: 1px solid black;
+      padding-left: 10px;
+    }
     &--row {
       @media screen and (max-width: 567px) {
         flex-direction: row;
@@ -243,12 +247,6 @@
     align-items: center;
   }
   &__start {
-    margin-right: 10px;
-  }
-  &__country::before {
-    content: '';
-    height: 13px;
-    border: 1px solid $section-bg-color;
     margin-right: 10px;
   }
 }

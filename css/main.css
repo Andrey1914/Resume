@@ -221,6 +221,10 @@ img {
   line-height: 24px;
   color: #000000;
 }
+.right__item--last {
+  border-left: 1px solid black;
+  padding-left: 10px;
+}
 .right__item--row {
   display: flex;
   align-items: center;
@@ -294,11 +298,5 @@ img {
   align-items: center;
 }
 .right__start {
-  margin-right: 10px;
-}
-.right__country::before {
-  content: "";
-  height: 13px;
-  border: 1px solid #1e2939;
   margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
